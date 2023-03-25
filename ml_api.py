@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import pickle
 import json
-import uvicorn
+# import uvicorn
 
 # loading the model
 load_gnb = pickle.load(open('./gnb_model', 'rb'))
@@ -43,5 +43,5 @@ def rfm_predict(input_param: RFMInput):
     else:
         return "Your Customer is of level Bronze (Low)"
 
-if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=30000)
+# if __name__ == "__main__":
+#     uvicorn.run(app, host="0.0.0.0", port=30000)
