@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import pickle
 import json
+import uvicorn
 
 # loading the model
 load_gnb = pickle.load(open('./gnb_model', 'rb'))
