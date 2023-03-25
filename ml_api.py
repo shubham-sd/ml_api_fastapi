@@ -42,3 +42,5 @@ def rfm_predict(input_param: RFMInput):
     else:
         return "Your Customer is of level Bronze (Low)"
 
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=30000)
