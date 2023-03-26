@@ -43,5 +43,24 @@ def rfm_predict(input_param: RFMInput):
     else:
         return "Your Customer is of level Bronze (Low)"
 
+
+# # creating API endpoints
+# @app.post('/rfm_prediction')
+# def rfm_predict(input_param: RFMInput):
+#     frequency = input_param.Frequency
+#     recency = input_param.Recency
+#     monetary_value = input_param.Monetary
+
+#     input_list = [frequency, recency, monetary_value]
+
+#     prediction = int(load_gnb.predict([input_list])[0].item())
+
+#     if prediction == 2:
+#         return "Your Customer is of level Gold (High)"
+#     elif prediction == 1:
+#         return "Your Customer is of level Silver (Medium)"
+#     else:
+#         return "Your Customer is of level Bronze (Low)"
+
 # if __name__ == "__main__":
 #     uvicorn.run(app, host="0.0.0.0", port=30000)
