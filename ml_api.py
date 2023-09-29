@@ -8,7 +8,6 @@ import json
 load_gnb = pickle.load(open('./gnb_model', 'rb'))
 
 
-
 # initializing app
 app = FastAPI()
 
